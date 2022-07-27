@@ -1,21 +1,24 @@
 <template>
     <form class="goodsForm" @submit.prevent>
-        <h2 class="goodsForm__title">Добавление товара</h2>
-        <h3 class="goodsForm__subtitle">Наименование товара</h3>
-        <input class="goodsForm__input" type="text" v-model="item.name" placeholder="Введите наименование товара" />
-        <h3 class="goodsForm__subtitle">Описание товара</h3>
-        <input class="goodsForm__input" type="text" v-model="item.descr" placeholder="Введите описание товара" />
-        <h3 class="goodsForm__subtitle">Ссылка на изображение товара</h3>
-        <input class="goodsForm__input" type="text" v-model="item.image" placeholder="Введите ссылку" />
-        <h3 class="goodsForm__subtitle">Цена товара</h3>
-        <input class="goodsForm__input" type="text" v-model="item.price" placeholder="Введите цену" />
-        <!--  удалено из кнопки -->
-        <button :disabled="!this.item.name || !this.item.image || !this.item.price" class="goodsForm__button"
-            @click="createItem">
-            Добавить товар
-        </button>
 
-
+        <div class="goodsForm__block">
+            <h3 class="goodsForm__subtitle goodsForm__needs">Наименование товара</h3>
+            <input class="goodsForm__input goodsForm__input--name" type="text" v-model="item.name"
+                placeholder="Введите наименование товара" />
+            <h3 class="goodsForm__subtitle">Описание товара</h3>
+            <textarea class="goodsForm__input goodsForm__input--descr" type="text" v-model="item.descr"
+                placeholder="Введите описание товара" />
+            <h3 class="goodsForm__subtitle goodsForm__needs">Ссылка на изображение товара</h3>
+            <input class="goodsForm__input goodsForm__input--iamge" type="text" v-model="item.image"
+                placeholder="Введите ссылку" />
+            <h3 class="goodsForm__subtitle goodsForm__needs">Цена товара</h3>
+            <input class="goodsForm__input goodsForm__input--price" type="text" v-model="item.price"
+                placeholder="Введите цену" />
+            <button :disabled="!this.item.name || !this.item.image || !this.item.price" class="goodsForm__button"
+                @click="createItem">
+                Добавить товар
+            </button>
+        </div>
     </form>
 </template>
 <script>
@@ -41,6 +44,7 @@ export default {
                     this.item.price = this.item.price
                         .toString()
                         .replace(/\B(?=(\d{3})+(?!\d))/g, "\xa0");
+                    this.item.price = this.item.price + ' руб.'
                 }
 
                 this.$emit("createItem", this.item);
@@ -58,23 +62,115 @@ export default {
 </script>
 <style scoped lang="scss">
 .goodsForm {
-    position: fixed;
+    max-width: w(332);
+
     display: inline-block;
-
     left: w(32);
+    height: 100vh;
 
+
+    &__block {
+        background: $backFormBlock;
+        box-shadow: 0px w(20) w(30) rgba(0, 0, 0, 0.04), 0px w(6) w(10) rgba(0, 0, 0, 0.02);
+        border-radius: w(4);
+        padding: w(24);
+    }
+
+    &__title {
+        font-size: w(28);
+        font-weight: 600;
+        line-height: w(35);
+        letter-spacing: -0.02em;
+        color: $titleColor;
+        white-space: nowrap;
+        margin-bottom: w(16);
+
+    }
+
+    &__subtitle {
+        font-size: w(10);
+        line-height: w(13);
+        font-weight: normal;
+        letter-spacing: -0.02em;
+        margin-bottom: w(4);
+        color: $subTitleColor;
+    }
+
+    &__input {
+        font-weight: normal;
+        background: $backFormBlock;
+        box-shadow: 0px w(2) w(5) rgba(0, 0, 0, 0.1);
+        border-radius: w(4);
+        width: 100%;
+        border: 0;
+        margin-bottom: w(16);
+        font-size: w(12);
+        line-height: w(15);
+        padding: w(11) w(16);
+
+
+
+        &--name,
+        &--image,
+        &--price {
+            min-height: w(36);
+            max-height: w(36);
+        }
+
+        &--descr {
+            min-height: w(108);
+            resize: none;
+        }
+
+
+
+        &::placeholder {
+            font-weight: normal;
+            font-size: w(12);
+            line-height: w(15);
+            letter-spacing: 0em;
+            color: $placeholderColor;
+        }
+    }
 
     &__button {
         font-family: 'Inter', sans-serif;
         width: 100%;
+        background: $buttonBack;
+        border-radius: w(10);
+        font-size: w(12);
+        font-weight: 600;
+        line-height: w(15);
+        letter-spacing: -0.02em;
+        text-align: center;
+        padding: w(10) w(95);
+        margin-top: w(24);
+        color: $main;
+        background: $buttonBack;
+        white-space: nowrap;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: inherit;
+            background: $buttonDisBack;
+            color: $placeholderColor;
+        }
     }
 
-    &__title {}
+    &__needs {
+        display: inline-block;
+        position: relative;
 
-    &__subtitle {}
-
-    &__input {}
-
-
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: w(-6);
+            width: w(4);
+            height: w(4);
+            border-radius: 50%;
+            background: $needsBack;
+        }
+    }
 }
 </style>
