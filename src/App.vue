@@ -23,7 +23,7 @@ export default {
 					name: "Наименование товара",
 					descr: "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
 					image:
-						"https://downloader.disk.yandex.ru/preview/cffbb5dc9f3c267bf1958b01f1a5e9c014e3b5c9ad12d8fc8eb6ec552d6d811e/62e16985/DSsmqgwZhrzAlQ63iTZxxsnVUk-KV1oSotfYKTruEiWWjbs_C8wNjqClXUPV7JVt-_ozHhJgah7IUoKKcgp_iA%3D%3D?uid=0&filename=camera.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+						"http://cahbejib23.ru/camera.jpg",
 					price: "10 000 руб.",
 				},
 				{
@@ -31,7 +31,7 @@ export default {
 					name: "Наименование товара",
 					descr: "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
 					image:
-						"https://downloader.disk.yandex.ru/preview/cffbb5dc9f3c267bf1958b01f1a5e9c014e3b5c9ad12d8fc8eb6ec552d6d811e/62e16985/DSsmqgwZhrzAlQ63iTZxxsnVUk-KV1oSotfYKTruEiWWjbs_C8wNjqClXUPV7JVt-_ozHhJgah7IUoKKcgp_iA%3D%3D?uid=0&filename=camera.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+						"http://cahbejib23.ru/camera.jpg",
 					price: "10 000 руб.",
 				},
 				{
@@ -39,7 +39,7 @@ export default {
 					name: "Наименование товара",
 					descr: "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
 					image:
-						"https://downloader.disk.yandex.ru/preview/cffbb5dc9f3c267bf1958b01f1a5e9c014e3b5c9ad12d8fc8eb6ec552d6d811e/62e16985/DSsmqgwZhrzAlQ63iTZxxsnVUk-KV1oSotfYKTruEiWWjbs_C8wNjqClXUPV7JVt-_ozHhJgah7IUoKKcgp_iA%3D%3D?uid=0&filename=camera.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+						"http://cahbejib23.ru/camera.jpg",
 					price: "10 000 руб.",
 				},
 				{
@@ -47,7 +47,7 @@ export default {
 					name: "Наименование товара",
 					descr: "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
 					image:
-						"https://downloader.disk.yandex.ru/preview/cffbb5dc9f3c267bf1958b01f1a5e9c014e3b5c9ad12d8fc8eb6ec552d6d811e/62e16985/DSsmqgwZhrzAlQ63iTZxxsnVUk-KV1oSotfYKTruEiWWjbs_C8wNjqClXUPV7JVt-_ozHhJgah7IUoKKcgp_iA%3D%3D?uid=0&filename=camera.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+						"http://cahbejib23.ru/camera.jpg",
 					price: "10 000 руб.",
 				},
 				{
@@ -55,7 +55,7 @@ export default {
 					name: "Наименование товара",
 					descr: "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
 					image:
-						"https://downloader.disk.yandex.ru/preview/cffbb5dc9f3c267bf1958b01f1a5e9c014e3b5c9ad12d8fc8eb6ec552d6d811e/62e16985/DSsmqgwZhrzAlQ63iTZxxsnVUk-KV1oSotfYKTruEiWWjbs_C8wNjqClXUPV7JVt-_ozHhJgah7IUoKKcgp_iA%3D%3D?uid=0&filename=camera.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+						"http://cahbejib23.ru/camera.jpg",
 					price: "10 000 руб.",
 				},
 				{
@@ -63,7 +63,15 @@ export default {
 					name: "Наименование товара",
 					descr: "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
 					image:
-						"https://downloader.disk.yandex.ru/preview/cffbb5dc9f3c267bf1958b01f1a5e9c014e3b5c9ad12d8fc8eb6ec552d6d811e/62e16985/DSsmqgwZhrzAlQ63iTZxxsnVUk-KV1oSotfYKTruEiWWjbs_C8wNjqClXUPV7JVt-_ozHhJgah7IUoKKcgp_iA%3D%3D?uid=0&filename=camera.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+						"http://cahbejib23.ru/camera.jpg",
+					price: "10 000 руб.",
+				},
+				{
+					id: 7,
+					name: "Наименование товара",
+					descr: "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
+					image:
+						"http://cahbejib23.ru/camera.jpg",
 					price: "10 000 руб.",
 				},
 			],
@@ -85,25 +93,18 @@ export default {
 </script>
 <style lang="scss">
 .main {
-	padding: w(30);
-	height: 100vh;
 	display: flex;
+	gap: w(16)
 }
 
 .goodsList {
-	// position: absolute;
-	// top: 0;
-	// left: w(380);
-	// margin-top: w(83);
-	max-width: w(1028);
-	display: inline-flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	flex: 1;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(auto-fit, minmax(w(332), w(332)));
+	align-items: start;
 	gap: w(16);
 
-	@media (max-width: 768px) {
-		text-align: right;
-		// width: w(800);
-	}
+
 }
 </style>

@@ -4,11 +4,16 @@
         <div class="goodsList-item__name">{{ item.name }}</div>
         <div class="goodsList-item__descr">{{ item.descr }}</div>
         <div class="goodsList-item__price">{{ item.price }}</div>
-        <button class="goodsList-item__button" @click="$emit('removeI', item)">Удалить</button>
+        <button class="goodsList-item__button" @click="$emit('removeI', item)"></button>
     </div>
 </template>
 <script>
-export default { props: { item: { type: Object, required: true } } };
+export default {
+    props: {
+        item: { type: Object, required: true }
+    },
+
+}; 
 </script>
 <style scoped lang="scss">
 .goodsList-item {
@@ -62,15 +67,24 @@ export default { props: { item: { type: Object, required: true } } };
         display: flex;
         flex-direction: column;
         min-width: w(332);
-        max-width: w(323);
-        // min-height: w(423);
+        max-width: w(332);
+        max-height: w(423);
         background: $backFormBlock;
         box-shadow: 0px w(20) w(30) rgba(0, 0, 0, 0.04), 0px w(6) w(10) rgba(0, 0, 0, 0.02);
         border-radius: 4px;
-
+        cursor: pointer;
 
         &:hover .goodsList-item__button {
             opacity: 1;
+        }
+
+        &:active {
+            transform: translate(w(2), w(2));
+
+        }
+
+        &:hover {
+            outline: 2px solid $subTitleColor;
         }
     }
 
@@ -81,6 +95,11 @@ export default { props: { item: { type: Object, required: true } } };
         right: -10px;
         opacity: 0;
         cursor: pointer;
+        width: w(32);
+        height: w(32);
+        box-shadow: 0px w(2) w(4) rgba(0, 0, 0, 0.1);
+        border-radius: w(10);
+        background: url('@/assets/delete.svg') center center / 50% 50% no-repeat, #FF8484;
     }
 }
 </style>
